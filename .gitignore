@@ -1,0 +1,27 @@
+# --- render artifacts: these are large, regenerable, and never belong in git ---
+out/
+out2/
+preview/
+*.png
+!docs/**/*.png
+*.mp4
+*.raw
+env.json
+env_full.json
+
+# --- fonts: 25 MB OFL TTFs, fetch them instead (see skill's Environment section) ---
+*.ttf
+*.otf
+fonts/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

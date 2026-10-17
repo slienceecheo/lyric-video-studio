@@ -1,0 +1,25 @@
+{
+  "_comment": "timeline_gen.py build <lrc> spec.json -o TIMELINE.py | the worked spec of the reference case (《待春归》, 45 sung lines -> 55 pages). Copy and re-point every field.",
+  "_comment_keys": "keys = one stable id per sung line, in LRC order; the renderer's content table is keyed by these, and a repeated phrase gets -2/-3 suffixes so the second appearance can be laid out differently. Omit 'keys' only if you do not want key-suffixing of repeats.",
+  "_comment_cards": "cards = the arrangement decision, NOT a computed value: how many card pages go before which line (0 = before the first line / song head) and which group they belong to. A card group's span must be >= n * card_t and >= min_gap, and n pages share the span evenly.",
+
+  "song_end": 218.860,
+  "fps": 30,
+  "tail_hold": 1.20,
+  "min_gap": 2.60,
+  "card_t": 1.50,
+  "min_t": 1.0,
+  "offset": 0.0,
+  "dark_first": false,
+  "dark_last": true,
+
+  "cards": [
+    {"before": 0,  "n": 1, "grp": "pre0"},
+    {"before": 15, "n": 3, "grp": "xiao"},
+    {"before": 28, "n": 1, "grp": "yan"},
+    {"before": 29, "n": 1, "grp": "final"},
+    {"before": 45, "n": 4, "grp": "tail"}
+  ],
+
+  "keys": ["xinzhi","fengjin","yibie","menqian","nishuo","cixing","shanhe","woque","xingnang","zhinen","yiran","fengti","xiaoyanzi","chuanhuayi","niannian","wuweiju","chuntian","mojianshou","xiwang","buxu","duozou","renjian","yuluo","xiaoyanzi-2","chuanhuayi-2","niannian-2","wenyazi","yazishuo","zheli","wanjia","lianzuo","qiyuan","huici","yingfeng","yizhan","ershi","kehai","wuyuan","dengming","shengsheng","suisui","fanhua","yingti","gongwang","shanhe2"]
+}

@@ -1,0 +1,15 @@
+# Normalise line endings: store LF in the repository, check out per-platform where safe.
+# Without this, every clone on Windows produces a whole-repo CRLF diff.
+
+* text=auto
+
+*.py  text eol=lf
+*.md  text eol=lf
+*.json text eol=lf
+LICENSE text eol=lf
+
+# Not tracked by this repo, but declare intent so a stray add cannot corrupt them.
+*.ttf binary
+*.otf binary
+*.mp4 binary
+*.raw binary
